@@ -10,12 +10,10 @@ const Bai1 = () => {
     const res = await axios.get(`https://wttr.in/${city}?format=j1`);
     setWeather(res.data);
   };
-
   return (
     <div style={page}>
       <div style={card}>
         <h2 style={title}>Thời tiết</h2>
-
         <div style={inputContainer}>
           <input
             value={city}
@@ -48,7 +46,6 @@ const page: React.CSSProperties = {
   minHeight: "80vh",
   backgroundColor: "#f5f5f5",
 };
-
 const card: React.CSSProperties = {
   backgroundColor: "#fff",
   padding: "30px",
@@ -57,19 +54,16 @@ const card: React.CSSProperties = {
   width: "90%",
   maxWidth: "600px",
 };
-
 const title: React.CSSProperties = {
   fontSize: "28px",
   fontWeight: "700",
   marginBottom: "20px",
 };
-
 const inputContainer: React.CSSProperties = {
   display: "flex",
   gap: "10px",
   marginBottom: "20px",
 };
-
 const input: React.CSSProperties = {
   flex: 1,
   padding: "10px",
@@ -77,7 +71,6 @@ const input: React.CSSProperties = {
   border: "1px solid #ccc",
   fontSize: "16px",
 };
-
 const button: React.CSSProperties = {
   backgroundColor: "#007bff",
   color: "white",
@@ -87,14 +80,12 @@ const button: React.CSSProperties = {
   cursor: "pointer",
   fontWeight: "500",
 };
-
 const result: React.CSSProperties = {
   backgroundColor: "#fff",
   borderRadius: "8px",
   padding: "15px",
   border: "1px solid #eee",
 };
-
 const temp: React.CSSProperties = {
   fontSize: "18px",
   fontWeight: "600",

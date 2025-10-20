@@ -20,7 +20,6 @@ const StudentDetail = () => {
       .then((res) => setStudent(res.data))
       .catch((err) => console.error(err));
   }, [id]);
-
   if (!student) return <p>Đang tải...</p>;
 
   return (
@@ -38,7 +37,6 @@ const StudentDetail = () => {
     </div>
   );
 };
-
 const page: React.CSSProperties = {
   display: "flex",
   justifyContent: "center",
@@ -46,7 +44,6 @@ const page: React.CSSProperties = {
   minHeight: "80vh",
   backgroundColor: "#f5f5f5",
 };
-
 const card: React.CSSProperties = {
   backgroundColor: "#fff",
   padding: "30px",
@@ -56,13 +53,11 @@ const card: React.CSSProperties = {
   maxWidth: "700px",
   lineHeight: "1.8",
 };
-
 const title: React.CSSProperties = {
   fontSize: "26px",
   fontWeight: "700",
   marginBottom: "20px",
 };
-
 const backLink: React.CSSProperties = {
   color: "#5a2ca0",
   textDecoration: "none",

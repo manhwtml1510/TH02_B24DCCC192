@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 interface Student {
   id: number;
@@ -44,7 +44,6 @@ const page: React.CSSProperties = {
   minHeight: "80vh",
   backgroundColor: "#f5f5f5",
 };
-
 const card: React.CSSProperties = {
   backgroundColor: "#fff",
   padding: "30px",
@@ -53,31 +52,26 @@ const card: React.CSSProperties = {
   width: "90%",
   maxWidth: "700px",
 };
-
 const title: React.CSSProperties = {
   fontSize: "28px",
   fontWeight: "700",
   marginBottom: "20px",
 };
-
 const list: React.CSSProperties = {
   listStyle: "none",
   padding: 0,
   margin: 0,
 };
-
 const item: React.CSSProperties = {
   padding: "10px 0",
   borderBottom: "1px solid #eee",
 };
-
 const link: React.CSSProperties = {
   fontSize: "18px",
   color: "#007bff",
   textDecoration: "none",
   fontWeight: "500",
 };
-
 const email: React.CSSProperties = {
   margin: "4px 0 0 0",
   color: "#666",

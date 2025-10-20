@@ -19,7 +19,6 @@ const Bai3 = () => {
       .then((res) => setArticles(res.data.results))
       .catch((err) => console.error("Lỗi khi tải dữ liệu:", err));
   }, []);
-
   const getDomain = (url: string): string => {
     try {
       const hostname = new URL(url).hostname.replace("www.", "");
@@ -28,7 +27,6 @@ const Bai3 = () => {
       return "nguồn tin";
     }
   };
-
   return (
     <div style={container}>
       <h2>Tin tức</h2>
@@ -70,5 +68,4 @@ const card: React.CSSProperties = {
   paddingBottom: "15px",
   alignItems: "flex-start",
 };
-
 export default Bai3;

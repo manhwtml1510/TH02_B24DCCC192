@@ -18,7 +18,6 @@ const Home = () => {
     </div>
   );
 };
-
 const container: React.CSSProperties = {
   backgroundColor: "white",
   margin: "20px auto",
@@ -27,5 +26,4 @@ const container: React.CSSProperties = {
   borderRadius: "8px",
   boxShadow: "0 2px 6px rgba(0,0,0,0.2)"
 };
-
 export default Home;
